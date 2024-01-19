@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  align-items: center;
+}
+
+li {
+  float: right;
+  padding-right: 20px;
+  margin-top: 5px;
+
+}
+
+li a {
+  display:inline-block;
+  text-align: center;
+  padding: 10px;
+  justify-content: right;
+  padding-left: 25px;
+  padding-top: 15px;
+  padding-right: 25px;
+}
+li a:hover{
+  border: 1px solid black;
+}
+
+.main{
+  flex: 1;
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+}
+ .main .search_input{
+  position: relative;
+  width: 50%;
+  margin-top: 20px;
+ }
+.search_input{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display:inline-block;
+  justify-content: center;
+  margin-left: auto;
+}
+.search_input .search{
+  width: 50%;
+  padding: 15px;
+  padding-left: 45px;
+  padding-right: 40px;
+  border-radius: 80px;
+  border: 1px solid#dedede;
+ outline: none;
+ font-size: 100px;
+ float: center;
+}
+.main .search_input .icons{
+  position:absolute;
+  top: 0%;
+  width: 45%;
+  display: flex;
+  padding: 60px 60px;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+
+}
+.B1{
+  border: 1px solid black;
+  border-radius: 12px;
+}
+.B2{
+  border: 1px solid black;
+  border-radius: 12px;
+}
+.B3{
+  border: 1px solid black;
+  border-radius: 12px;
+}
+pre{
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: aliceblue;
+  border: solid 1px #e0e4e0;
+  width: 500px;
+  margin: 5%;
+  padding: 0%; 
+  display:inline-block;
+  margin-left: 35%;
+}
+
+</style>
+</head>
+<body>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <nav>
+     <div class="yahoo">
+ <img src="data:image/png;base64,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" height="100px" width="100px">
+ <ul> 
+  <li><a href=#>18 c</a></li>
+  <li><a href=#><span class="material-symbols-outlined">clear_night</span></a></li>
+  <li><a href=#><span class="material-symbols-outlined">apps</span></a></li>
+  <li><a href=#><span class="material-symbols-outlined">mail</span></a></li>
+</ul>
+</div>
+</nav>
+<div class="main">
+  <h1><center> Good Morning</center></h1>
+  <h5><center> Today is January 18.</center></h5></div>
+<div class="search_input">
+  <center> 
+    <input type="text" class="search" >
+    <div class="icons">
+    <span class="material-symbols-outlined"> Search</span>
+    </div>
+    <div>
+    <span class="material-symbols-outlined">mic </span>
+    </div>
+  </center>   
+</div>
+
+          <center>
+        <button class="B1"><span class="material-symbols-outlined">
+          sports_cricket
+          </span>cricket</button>
+          <button Class="B2"><span class="material-symbols-outlined">
+            movie
+            </span>Movie</button>
+          <button class="B3"><span class="material-symbols-outlined">
+            news
+              </span>News</button>
+         </center>    
+</div>
+<pre><center>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat 
+  sequi, magni inventore accusamus distinctio, impedit,
+   provident neque sit ut dolore eaque ipsa unde! Tenetur 
+   atque nostrum numquam ea. In, officiis! 
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+   Expedita cum ipsa laudantium commodi at facilis est, sunt id ullam.
+  Accusamus quos voluptatibus excepturi eum omnis voluptas  quidem.
+   
+</center></pre>
+</body>
+</html>
+
+
