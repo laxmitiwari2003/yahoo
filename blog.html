@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemburger Menu|</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    style.css
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: black;
+}
+nav{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:red;
+    position:relative;
+    height: 70px;
+    background-image: linear-gradient(#670202,#fc0909) ;
+}
+
+.logo{
+    
+    float: left;
+    color: white;
+    cursor: pointer;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    float: left;
+    color: white;
+    cursor: pointer;
+}
+.navbar li a:hover{
+    color:black;
+}
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+.menu-icon{
+    display: none;
+}
+
+.menu-icon i{
+    color: #fff;
+    font-size: 30px;
+}
+
+@media (max-width:600px) {
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #004274;
+        gap: 0;
+        overflow: hidden;
+    }
+    nav ul li{
+        padding: 20px;
+        padding-top: 0;
+    }
+    .btn button{
+            width: 100px;
+            height: 36px;
+            border: 3px solid rgba(234, 6, 6, 0.801);
+            background-color: black;
+            color:red;
+            font-size: 18px;
+            border-radius: 35px;
+            margin-top: 11px;
+            margin-right: 20px;   
+         }
+         .food.search-container {
+  float: right;
+}
+ .food.search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+ .food.search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) 
+  .food.search-container {
+    float: none;
+  }
+    button{
+ color:red;
+ border: black;
+    }
+   
+h1{
+color : black;
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background: lightblue;
+  background-color: #670202;
+  text-align: center;
+  text-decoration: underline;
+
+}
+h6{
+  color: palevioletred;
+}
+  
+</style>
+    <body>
+        <nav>
+            <div class="Food">
+                <div>
+                    <h2>Food</h2>
+                </div>
+            </div class="navbar">
+            <ul id="menuList">
+              <li><a href="#home">Home</a></li>
+                <li><a href="#History">History</a></li>
+                <li><a href="#Food and Drinks">Food and Drinks</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <div class="search-container">
+                  <form action="/action_page.php">
+                    <input type="text" placeholder="Search. name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                  </form>
+                </div>
+            </ul>
+            <div class="btn">
+              <button>Log in</button>
+              <button>Sign in</button>
+            </div>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()" ></i>
+            </div>
+        </nav>
+        <section id="home">
+        <h2>Welcome to Your Food Blog</h2>
+        
+        <p>Indian food is different from rest of the world not only in taste but also in cooking methods. It reflects a perfect blend of various cultures and ages. Just like Indian culture, food in India has also been influenced by various civilizations, which have contributed their share in its overall development and the present form.
+           Foods of India are better known for its spiciness. Throughout India, be it North India or South India, spices are used generously in food. But one must not forget that every single spice used in Indian dishes carries some or the other nutritional as well as medicinal properties.</p>
+<img src="file:///C:/Users/shail/Desktop/Web/project/website/welcome">
+    </section>
+<section id="History">
+        <h2>INDIAN FOOD HISTORY</h2>
+        <p> The beginning of agriculture in the Indian subcontinent comes from the North-West part of India. As per the Archaeological survey, crops were grown in the cleared forest around 8000 BCE in north Rajasthan. Mehrgarh is a prehistoric site located in Baluchistan, which shows the earliest evidence of farming & herding in South Asia as per Archaeological survey (Mehrgarh is a Neolithic site dated 7000BCE to 3000 BCE).</p>
+</section>
+    <section id="food">
+        <h2>TRADITIONAL INDIAN FOODS TO TASTE IN 2024 </h2>
+        <h6>JUMP TO SECTION</h6>
+        <p><a href="#C1">GET A TASTE OF TRADITIONAL INDIAN FOODS</a></p>
+<p><a href="#C2">INDIAN BREADS</a></p>
+<p><a href="#C3">INDIAN STREET FOODS</a></p>
+<p><a href="#C4">BOOK A LOCAL FOOD TOUR NOW </a></p>
+<p><a href="#C5">GOURMET COOKING CLASSES NEAR YOU</a></p>
+<p><a href="#C6">INDIAN APPETIZERS</a></p>
+<p><a href="#C7">BOOK A LOCAL FOOD TOUR NOW</a></p>
+</section>
+<SECTION id="c1">
+        <h3 id="C1">GET A TASTE OF TRADITIONAL INDIAN FOODS</h3>
+ <img src="file:///C:/Users/shail/Desktop/Web/project/website/1">
+        <p>One of the best ways to get to know a cuisine is to practice making it yourself. Learn how to recreate the iconic flavors of Indian food at home with hands-on cooking classes led by world-class chefs. Explore the influence of history, geography and culture of Indian food and how Indian food names and ingredients reflect its regional cuisines.
+               With <a href="https://www.cozymeal.com/bay-area/cooking-classes/indian">Indian cooking classes in the Bay Area</a>, <a href="https://www.cozymeal.com/nyc/cooking-classes/indian">Indian cooking classes in NYC ></a> and other cooking classes near you, talented chefs will teach you traditional techniques for building depth of flavor and balancing the signature spices to craft authentic Indian food. If you can’t find a class in your area, discover the distinctive stories and spices of this iconic cuisine virtually with interactive online Indian cooking classes.</p>
+    </section>
+<section>
+  <h3 id="C2">INDIAN BREADS</h3>
+  <p>As in many global cuisines, bread is a foundational element of Indian food. Although often similar in ingredients and appearance, different styles of bread popular throughout the Indian subcontinent are distinguished by distinct cooking techniques, textures or types of flours ranging from pillowy flatbreads or thin crêpes to stuffed dough or crisp puffs.</p>
+  <h6>1. Naan</h6>
+<img src="file:///C:/Users/shail/Desktop/Web/project/website/2" height="100px" width="100px">
+  <button><a href="https://www.indianhealthyrecipes.com/naan/">Vew Recipe </a></button>
+<p>The most widely recognized Indian bread is soft, bubbly naan. This unleavened flatbread can be baked or fried and frequently appears as an accompaniment at Indian restaurants in the United States and around the world. Traditionally, naan is cooked in a tandoor, a cylindrical clay or metal oven with a high cooking temperature. The signature bread is served plain or with butter, garlic and/or chilies.Naan is a traditional Indian food via Canva</p>
+
+<h6>2. Chapati</h6>
+<img src="file:///C:/Users/shail/Desktop/Web/project/website/image3">
+<button><a href="https://recipes.timesofindia.com/recipes/chapati/rs61203720.cm">Vew Recipe </a></button>
+<p>Chapati is an unleavened flatbread made of finely ground whole wheat flour mixed into dough with water and salt that is cooked on a tava, or flat skillet. This ancient style of bread gets its name from the Hindi word chapat, which means slap or flat. The word describes the traditional method of preparing the dough by wetting one’s palms and slapping the dough between them.
+Chapati, known as roti in other parts of the world, is foundational to a number of other cuisines across Asia, the Middle East and the Caribbean.
+GOURMET COOKING CLASSES NEAR YOU
+Take your culinary skills to new levels with guidance from five-star chefs.</p>
+
+<h3 ID="C3">INDIAN STREET FOODS</h3>
+<p>Street food is central to Indian food culture, with each region, state and city having its own delicacies and local favorites. Many regional Indian foods enjoyed along its bustling streets can be found across the country under different names or spellings. Most street foods are simple, filling dishes that are easy to make and eat on the go but are still rich with the bold flavors and aromas of fried dough, savory vegetables and toasted spices. 
+</p>
+
+<h6>3. Samosas</h6>
+<img src=""C:\Users\shail\Desktop\Web\project\website\images (4).jpeg"">
+<button><a href="https://recipes.timesofindia.com/recipes/samosa/rs61050397.cms">Vew Recipe </a></button>
+<p>Arguably the most popular street food in India, samosas are fried or baked pastry pockets with a savory filling such as spiced potatoes, onions and peas. With origins dating back to around the 10th century, versions of samosas with different shapes and fillings can be found throughout Asia, Africa and the Middle East. The samosa has become an iconic Indian food recognized all around the world.
+fried, triangular samosas with garnishes and sauce
+via Canva</p>
+
+<h6>4. Chaat</h6>
+<img src="file:///C:/Users/shail/Desktop/Web/project/website/image5">
+<button><a href="https://recipes.timesofindia.com/recipes/samosa/rs61050397.cms">Vew Recipe </a></button>
+<p>Chaat actually refers to an entire category of Indian food popular throughout the country in street stalls and roadside stands. Combining aromatic spices and tangy sauces, chaat blends elements that are sweet, salty, crunchy, spicy and savory into one dish bursting with flavor and texture sensations. Although every chaat may look a little different, versions of this unique Indian food usually share a similar design.
+</p>
+
+<h3 ID="C4">BOOK A LOCAL FOOD TOUR NOW </h3>
+<p>Explore your city's best bites, esteemed eateries and hidden gems with a top-rated tour guide.
+Begin with a starchy base such as samosas, puffed rice or fried bread. Next, add lots of vegetables such as raw onion, boiled potatoes or chopped tomatoes. A sweet, spicy or tangy chutney is then poured over the vegetables followed by a dusting of chaat masala spice blend to give the chaat its signature flavor.
+Finally, finish the chaat with a sprinkle of something crispy or fried such as fried potato bits, crunchy chickpeas or deep-fried noodles. Aloo chaat is a popular potato-based version of this Indian food to look for if you want to give chaat a try.
+</p>
+<h6>5. Pani Puri</h6>
+<img src="file:///C:/Users/shail/Desktop/Web/project/website/download%20(6)">
+<button><a href="https://foodviva.com/snacks-recipes/pani-puri/">Vew Recipe </a></button>
+</p>Pani puri is a unique Indian street food experience that goes by many names throughout the country depending on the region, but it is believed to have originated in the northeastern state of Bihar.
+Enjoying pani puri is an interactive experience in which you use your thumb to poke a hole in one side of a round, hollow puri, a deep-fried crisp flatbread, which is then filled with a mixture of flavored water, chili powder, chaat masala, tamarind chutney, potatoes, chickpeas or onions — although spices and fillings vary across regions. Pop the entire puri in your mouth to experience an explosion of vibrant flavors and textures.
+Pani puri is an Indian food commonly eaten as a snack</p>
+
+<h6>6. Kachori</h6>
+<img src="file:///C:/Users/shail/Desktop/Web/project/website/image7">
+<button><a href="https://hebbarskitchen.com/moong-dal-ki-kachori-recipe/">Vew Recipe </a></button>
+<p>Another popular deep-fried Indian food that goes by many names is kachori. Similar to an empanada, kachori are made with a dough of fine flour stuffed with lentils, beans, vegetables or onions and spices with rich gravy or bold chutney.
+plump, fried Indian bread called kachori via Canva</p>
+
+<h3 ID="C5">GOURMET COOKING CLASSES NEAR YOU</h3>
+Take your culinary skills to new levels with guidance from five-star chefs.
+
+<h6>7. Dosa</h6>
+<img src="file:///C:/Users/shail/Desktop/Web/project/website/images%20(9)">
+<button><a href="https://www.pbs.org/food/recipes/masala-dosa-south-indian-crepes/">Vew Recipe </a></button>
+<p>Dosas are an icon of South Indian food, with a legacy dating back to ancient times. Made from fermented lentil and rice flour batter, the thin pancakes or crêpes are served hot and either folded in half or rolled like a wrap. They are usually eaten with chutney or sambar, a South Indian lentil and vegetable stew. Variations of dosa contain different combinations of fillings and sauces with regional varieties of dough ingredients and preparation methods. 
+</p>
+<h6>8. Vada Pav </h6>
+<img src="file:///C:/Users/shail/Desktop/Web/project/website/image10">
+<button><a href="https://www.vegrecipesofindia.com/vada-pav-how-to-make-wada-pav/">Vew Recipe </a></button>
+<p>Vada pav is a vegetarian street food dish native to the central state of Maharashtra, which is home to the city of Mumbai. The popular dish consists of a deep-fried potato dumpling inside a soft bread bun accompanied by chutneys and green chili peppers.
+Vada pav, also called a Bombay Burger, was created in the mid-20th century as an affordable and nourishing dish for workers and holds an important place in the city’s culture and political history. World Vada Pav day is celebrated annually on August 23.
+Vada pav is an Indian food also known as a Bombay burger
+via Canva</p>
+
+
+<h3 ID="C6">INDIAN APPETIZERS </h3>
+Sometimes overlapping with snacks and street foods, Indian appetizers start the meal with tantalizing spices, contrasting textures and a nod to the diverse cultural influences and legendary creations that make up this unique segment of Indian cuisine.
+
+
+<h3 ID="C7">BOOK A LOCAL FOOD TOUR NOW </h3>
+Explore your city's best bites, esteemed eateries and hidden gems with a top-rated tour guide.
+
+<h6>9. Pakora</h6>
+<img src="file:///C:/Users/shail/Desktop/Web/project/website/image%2013">
+<button><a href="">Vew Recipe </a></button>
+<p>Pakora, also known as bhaji among other names, are spiced vegetable fritters deep-fried and eaten as a snack, street food or appetizer. These crispy fritters are often accompanied by tamarind sauce, chutney or raita and are a popular food at Indian weddings.
+Pakoras are an Indian food that are deep fried vegetables
+via Canva
+
+  </section>
+
+<section>
+      <h2> For More Information</h2>
+               <div class="container"><br>
+           <form> <p>For More Information  </p>
+             <label for="email"><b>Enter Email id:</b></label>
+             <input type="text" id="email"><br><br>
+             <label for="password"><b>enter password</b> </label>
+             <input type="password" id="password"><br><br>
+               <input type="radio" id="Log in" name="fav_language" value="Log in">
+               <label for="html">Log in</label>   
+               <input type="radio" id="Sign in" name="fav_language" value="Sign in">
+               <label for="css">Sign in</label><br>
+           </br>
+             <input type="submit" value="click">
+             </form>
+            </div><br><br>
+</section>
+<section>
+  <footer id="footer"  style="background-image: linear-gradient(#670202,#fc0909) ;"><center>
+    <h6>GET HELP</h6>
+<PRE>Contact
+Gift cards
+Gift Cards in Bulk
+How it works
+FAQ</PRE>
+
+<H6>SHOP</H6>
+<PRE>Orders & Shipping
+Returns & Exchanges
+Product Reviews</PRE>
+ &COPY; Cozymeal, Inc. 2013-2024 - Phone: 800-369-0157
+ <br>
+<i class="fab fa-facebook"></i></a>
+<i class="fab fa-twitter"></i></a>
+<i class="fab fa-instagram"> </i></a>
+</div></center>  </footer>
+</section>
+</body>
+</html>
